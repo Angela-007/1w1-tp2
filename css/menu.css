@@ -1,0 +1,72 @@
+.hero__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgba(184, 110, 0, 0.849);
+  border-radius: 5px;
+}
+
+#chk-burger {
+  display: none;
+}
+
+.navigation {
+  position: fixed;
+  top: 31px;
+  right: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.navigation:hover {
+  animation: shake 1s infinite; 
+}
+
+.navigation__bouton {
+}
+
+.navigation__menu {
+  display: none;
+  background-color: rgba(204, 92, 1, 0.651);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+.navigation__menu a {
+  font-family: "Shine"; 
+  display: block;
+  text-decoration: none;
+  background-color: rgba(209, 125, 0, 0.829);
+  padding: 12px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navigation__menu a:hover {
+    animation: shake 0.2s infinite; 
+}
+
+#chk-burger:checked ~ .navigation__menu {
+  display: block;
+  
+}

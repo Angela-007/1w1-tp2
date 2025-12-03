@@ -1,0 +1,15 @@
+.formulaire {
+  border: 2px dotted rgba(0, 0, 0, 0.452);
+}
+
+.formulaire div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.formulaire fieldset {
+  margin: 25px 0;
+  border: 1px dotted rgba(0, 0, 0, 0.452);
+}

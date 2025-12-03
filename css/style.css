@@ -1,0 +1,250 @@
+/* ////////////////////--Font--////////////////////////// */
+
+@font-face {
+  font-family: "Super Crawler";
+  src: url("../fonts/Super Crawler.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Holly Berry Pop";
+  src: url("../fonts/Holly Berry Pop.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Shine";
+  src: url("../fonts/Shine Bubble Decoration - (Demo) hanscostudio.com.ttf") format("truetype");
+}
+
+/* ///////////////////////--Page--/////////////////////// */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section,
+header,
+footer {
+  min-height: 100vh;
+}
+
+.centre {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: rgba(249, 249, 255, 0.836);
+  padding: 30px 25px;
+  border: thick double #d19900;
+}
+
+/* ///////////////////////--Fond--/////////////////////// */
+
+body>div:nth-of-type(1) {
+  background-color: rgb(255, 255, 255);
+}
+
+body>div:nth-of-type(2) {
+  background-color: rgb(255, 116, 116);
+}
+
+body>div:nth-of-type(3) {
+  background-color: rgb(255, 204, 116);
+}
+
+body>div:nth-of-type(4) {
+  background-color: rgb(241, 255, 116);
+}
+
+body>div:nth-of-type(5) {
+  background-color: rgb(155, 116, 255);
+}
+
+body>div:nth-of-type(6) {
+  background-color: rgb(116, 255, 148);
+}
+
+body>div:nth-of-type(7) {
+  background-color: rgb(116, 179, 255);
+}
+
+/* ////////////////////--Hero--////////////////////////// */
+
+.hero {
+  background-image: url("../images/Accueil.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.hero__barresup {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  background-color: rgba(171, 171, 171, 0.598);
+  gap: 345px;
+}
+
+.hero__titre {
+  color: rgb(199, 113, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-family: "Super Crawler";
+}
+
+.hero__logo {
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero__titre__accueil {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(199, 113, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Holly Bery Pop";
+}
+
+.hero__haut {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* //////////////////////////--Inscription--////////////////////////////////// */
+
+.page__inscription {
+  background-image: url("../images/inscription.png");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.page__titre__inscription {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(199, 113, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Holly Bery Pop";
+}
+
+
+/* ///////////////////////////--TABLEAU--///////////////////////////////// */
+
+.page__tableau {
+  background-image: url("../images/tableau.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.page__titre__tableau {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(199, 113, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Holly Bery Pop";
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 60px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* ////////////////////////////--PIED--//////////////////////////////// */
+
+.pied {
+  background-image: url("../images/pied.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.pied__titre {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(199, 113, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Holly Bery Pop";
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.pied__navigation {
+width: 100%; 
+  margin-bottom: 25px;
+}
+
+.pied__rejoindre {
+width: 100%; 
+  margin-bottom: 25px;
+}
+
+.pied__horaire {
+width: 100%; 
+  margin-bottom: 25px;
+}
+
+.pied__legalite {
+width: 100%; 
+  margin-bottom: 25px;
+}
+
+.pied__sociaux {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin: 0;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  margin: 23px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+legend{
+  font-weight: bold;
+}
+
+.adresse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
