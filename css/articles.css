@@ -2,6 +2,7 @@
 .article{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -10,14 +11,14 @@
 .article__div{
     flex-grow: 1;
     flex-shrink:0 ;
-    flex-basis: 300px;
+    flex-basis: 100px;
 }
 
 /* element du conteneur la première colonne */
 .article__figure{
-    /* flex-grow: ;
-    flex-shrink: ;
-    flex-basis: ; */
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 100px;
     order: -1;
 }
 
