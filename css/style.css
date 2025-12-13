@@ -87,7 +87,6 @@ body>div:nth-of-type(7) {
   background-image: url("../images/Accueil.jpg");
   background-position: 50%;
   background-size: cover;
-  background: linear-gradient(to bottom, blue 80%, white 100%);
 }
 
 
@@ -101,7 +100,7 @@ body>div:nth-of-type(7) {
 
 .hero__titre {
   color: rgb(199, 113, 0);
-  font-size: 3rem;
+  font-size: clamp(3rem, 8.5vw, 8rem);
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
@@ -219,9 +218,8 @@ width: 100%;
 .pied__sociaux {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 45px;
   margin: 0;
 }
 
