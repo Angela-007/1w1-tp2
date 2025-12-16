@@ -1,0 +1,103 @@
+/* --------------------Font------------------------ */
+@font-face {
+  font-family: "DynaPuff";
+  src: url("../fonts/DynaPuff-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/montserrat.black.ttf") format("truetype");
+}
+
+.global h1 {
+  font-family: "DynaPuff"; /*verifier*/
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+
+.global h2,
+h3 {
+  font-family: "montserrat"; /*verifier*/
+}
+
+.global h3 {
+  font-family: "montserrat"; /*verifier*/
+  font-weight: 0;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+  margin: 0;
+}
+
+.recette__div li {
+  font-size: 20px;
+}
+
+/* --------------------recette ------------------------ */
+
+.recette {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  border-bottom: 3px dotted grey;
+  padding-bottom: 30px;
+}
+
+.recette__div {
+  width: 100%;
+}
+
+.recette__image {
+  order: -1;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+}
+
+.recette__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recette__figure {
+  transform: rotate(-5deg);
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  padding: 10px;
+  border: solid #516c8e;
+  border-radius: 15px;
+}
+
+.recette__figure:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.recette figcaption {
+  background-color: rgba(143, 98, 35, 0.251);
+  font-weight: bold;
+  padding: 5px;
+}
+
+.recette:nth-child(2n + 1) .recette__image {
+  order: 3;
+}
+
+/* --------------------home------------------------ */
+
+.home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.home__link {
+  filter: invert(50%) sepia(80%) saturate(1500%) hue-rotate(180deg);
+  transition: filter 1s;
+}
+
+.home__link:hover {
+  filter: none;
+}
